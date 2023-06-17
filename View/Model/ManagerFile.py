@@ -357,7 +357,11 @@ class ManagerFile(object):
         g.addArist(Arist(g.getVertex('C.Pueblo, C.Nube'), g.getVertex('C.Estrella, C.Nube')))
         g.addArist(Arist(g.getVertex('C.Pueblo, C.Nube'), g.getVertex('Av.Carrillo,C.Pueblo')))
         g.addArist(Arist(g.getVertex('Av.Carrillo,C.Pueblo'), g.getVertex('Av.America, Av.Carrillo')))
-
+        g.addArist(Arist(g.getVertex('C.Nube, C.Flor'), g.getVertex('Av.Carrillo, C.Na')))
+        g.addArist(Arist(g.getVertex('C.Estrella,C.Mar'), g.getVertex('C.Mar, C.Montaña')))
+        g.addArist(Arist(g.getVertex('C.Estrella,C.Mar'), g.getVertex('Pza.Milagros')))
+        g.addArist(Arist(g.getVertex('C.Estrella,C.Mar'), g.getVertex('C.Estrella, C.Nube')))
+        g.addArist(Arist(g.getVertex('Av.Carrillo, C.Na'), g.getVertex('Av.America, Av.Carrillo')))
 
         # Aristas centro izquierdo inferior
         g.addArist(Arist(g.getVertex('C.12, C.10'), g.getVertex('C.10, Cedar')))
